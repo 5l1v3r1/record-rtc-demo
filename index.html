@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript" src="./js/lib/jQuery.v.2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/lib/RecordRTC.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body class="container-fluid main-panel">
+<div class="row">
+    <div class="col-md-12">
+        <div id="current-audio-label">
+            Listen audio #<span class="current-audio-number"> and after that record an answer
+        </div>
+        <audio id="audio-1">
+            <source src="./assets/record_1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio-2">
+            <source src="./assets/record_2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio-3">
+            <source src="./assets/record_3.mp3" type="audio/mpeg">
+        </audio>
+        <div class="hidden" id="recording-options">
+            <div class="">Record answer #<span class="current-audio-number"></span></div>
+            <div class="btn btn-default" id="start-recording">Start</div>
+            <div class="btn btn-default frozen" id="stop-recording">Stop</div>
+            <div class="hidden" id="recording-label">Recording...</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.main-panel {
+    background: #f2f4f5;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.frozen {
+    pointer-events: none;
+    background: lightgray;
+}
